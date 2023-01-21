@@ -1,6 +1,6 @@
 import React from 'react';
-import AllBook from './AllBook';
 import AddBook from './AddBook';
+import AllBook from './AllBook';
 
 const Home = () => (
   <div>
