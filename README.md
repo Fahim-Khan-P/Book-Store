@@ -26,11 +26,11 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 math-magician <a name="about-project"></a>
+# 📖 Book-Store <a name="about-project"></a>
 
 > This is the Book-Store project for react JS.
 
-**math-magician** is a...
+**Book-Store** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
