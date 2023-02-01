@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { createBooks } from '../redux/books/booksSlice';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -17,11 +17,12 @@ const AddBook = () => {
   const handleClick = (e) => {
     e.preventDefault();
     const book = {
-      id: new Date().getTime().toString(),
+      item_id: new Date().getTime().toString(),
       title: newBook.title,
       author: newBook.author,
+      category: 'Fiction',
     };
-    dispatch(addBook(book));
+    dispatch(createBooks(book));
     setNewBook({
       title: '',
       author: '',
