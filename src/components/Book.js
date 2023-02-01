@@ -1,9 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 
 const Book = (book) => {
-  const { title, author, id } = book;
+  // eslint-disable-next-line camelcase
+  const { title, author, item_id } = book;
   const dispatch = useDispatch();
   return (
     <div className="book">
@@ -14,7 +15,7 @@ const Book = (book) => {
         {author}
         <button
           type="button"
-          onClick={() => dispatch(removeBook(id))}
+          onClick={() => dispatch(deleteBook(item_id))}
         >
           Remove
         </button>
