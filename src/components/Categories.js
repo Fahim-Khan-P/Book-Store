@@ -1,9 +1,15 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { checkStatus } from '../redux/Categories/CategoriesSlice';
 
-const Categories = () => (
-  <div>
-    <button type="button">Check Status</button>
-  </div>
-);
-
+const Categories = () => {
+  const categories = useSelector((state) => state.categories);
+  const dispatch = useDispatch();
+  return (
+    <div>
+      <button type="button" onClick={() => dispatch(checkStatus())}>Check Status</button>
+      <h2>{categories}</h2>
+    </div>
+  );
+};
 export default Categories;

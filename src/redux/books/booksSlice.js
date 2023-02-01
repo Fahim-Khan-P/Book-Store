@@ -11,7 +11,23 @@ export const removeBook = (bookId) => ({
   bookId,
 });
 
-const INITIALBOOKS = [];
+const INITIALBOOKS = [
+  {
+    id: 1,
+    title: 'Redux',
+    author: 'Khan',
+  },
+  {
+    id: 2,
+    title: 'React',
+    author: 'Aman',
+  },
+  {
+    id: 3,
+    title: 'Express',
+    author: 'Karim',
+  },
+];
 
 const bookReducer = (state = INITIALBOOKS, action) => {
   switch (action.type) {
