@@ -4,7 +4,6 @@ import { createBooks } from '../redux/books/booksSlice';
 
 const AddBook = () => {
   const dispatch = useDispatch();
-
   const [newBook, setNewBook] = useState({
     title: '',
     author: '',
@@ -34,6 +33,7 @@ const AddBook = () => {
       <h3 className="new-book-title">Add New Book</h3>
       <form className="add-form">
         <input
+          className="input"
           type="text"
           placeholder="Title"
           name="title"
@@ -41,14 +41,16 @@ const AddBook = () => {
           value={newBook.title}
           onChange={handleInput}
         />
-        <input
-          type="text"
-          placeholder="Author"
-          name="author"
-          required
-          value={newBook.author}
-          onChange={handleInput}
-        />
+        <select
+          className="input"
+          style={{ width: '165px' }}
+        >
+          <option value="" disabled>Select category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Novel">Novel</option>
+          <option value="Science-Fiction">Science-Fiction</option>
+          <option value="Economy">Economy</option>
+        </select>
         <button type="submit" className="add-btn" onClick={handleClick}>
           Add
         </button>

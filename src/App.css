@@ -11,6 +11,10 @@ body {
 
 .nav {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav ul {
@@ -20,6 +24,13 @@ body {
   gap: 10vh;
   padding: 20px;
   margin-left: 80px;
+}
+
+.userIcon {
+  color: #0290ff;
+  font-size: 40px;
+  margin-right: 3%;
+  border-radius: 30px;
 }
 
 .nav ul li {
@@ -32,10 +43,30 @@ body {
   text-decoration: none;
 }
 
-input {
-  padding: 5px;
-  width: 500px;
+.navbar-title {
+  color: rgb(25, 173, 223);
+}
+
+.link {
   margin: 10px;
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input {
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  background-color: #fff;
+  border: 1px solid #c9c7c7bf;
+  padding: 9px 10px;
+  border-radius: 4px;
+}
+
+input {
+  width: 106vh;
 }
 
 form {
@@ -43,7 +74,7 @@ form {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 20px;
 }
 
 .form-div {
@@ -59,7 +90,7 @@ form {
 }
 
 .add-btn {
-  padding: 7px;
+  padding: 10px 10px;
   width: 150px;
   background-color: #0290ff;
   color: rgb(245, 245, 245);
@@ -79,10 +110,15 @@ form {
 
 .all-book-container {
   display: grid;
-  grid-template-columns: 60vh 55vh 25vh;
+  grid-template-columns: 40% 35% 20%;
   padding: 15px;
   width: 93%;
   margin: auto;
+  transition: transform 250ms;
+}
+
+.all-book-container:hover {
+  transform: translate(6px, -6px);
 }
 
 .button-container {
