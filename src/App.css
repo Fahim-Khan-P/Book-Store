@@ -44,7 +44,9 @@ body {
 }
 
 .navbar-title {
-  color: rgb(25, 173, 223);
+  color: rgb(0, 191, 255);
+  font-weight: bolder;
+  font-size: xx-large;
 }
 
 .link {
