@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f7efef;
+}
+
+.nav {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav ul {
   display: flex;
   flex-direction: row;
@@ -5,6 +24,13 @@
   gap: 10vh;
   padding: 20px;
   margin-left: 80px;
+}
+
+.userIcon {
+  color: #0290ff;
+  font-size: 40px;
+  margin-right: 3%;
+  border-radius: 30px;
 }
 
 .nav ul li {
@@ -17,15 +43,180 @@
   text-decoration: none;
 }
 
-input {
-  padding: 5px;
-  width: 500px;
+.navbar-title {
+  color: rgb(0, 191, 255);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.link {
   margin: 10px;
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input {
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  background-color: #fff;
+  border: 1px solid #c9c7c7bf;
+  padding: 9px 10px;
+  border-radius: 4px;
+}
+
+input {
+  width: 106vh;
 }
 
 form {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-div {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.new-book-title {
+  margin-left: 11px;
+}
+
+.add-btn {
+  padding: 10px 10px;
+  width: 150px;
+  background-color: #0290ff;
+  color: rgb(245, 245, 245);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.single-book {
+  display: flex;
+  margin: auto;
+  width: 1170px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.all-book-container {
+  display: grid;
+  grid-template-columns: 40% 35% 20%;
+  padding: 15px;
+  width: 93%;
+  margin: auto;
+  transition: transform 250ms;
+}
+
+.all-book-container:hover {
+  transform: translate(6px, -6px);
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.book-container {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 1.375rem;
+  color: #121212;
+}
+
+.author {
+  font-size: 0.875rem;
+  color: #4386bf;
+}
+
+span {
+  color: #e8e8e8;
+}
+
+.progress-div {
+  display: flex;
+  gap: 10px;
+}
+
+.progres-bar {
+  width: 120px;
+  height: 130px;
+}
+
+.percentage {
+  font-size: 2rem;
+  color: #121212;
+}
+
+.book-status {
+  font-size: 0.875rem;
+  color: #121212;
+}
+
+.last-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.current-chapter {
+  font-size: 0.813rem;
+  color: #121212;
+  font-weight: 300;
+}
+
+.chapter {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.progress-btn {
+  border: none;
+  font-size: 0.875rem;
+  background-color: #0290ff;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.status-btn {
+  padding: 12px;
+  font-size: 20px;
+  background-color: #4386bf;
+  color: white;
+  margin: 4% 0 0 10%;
+  width: 80%;
+}
+
+.underConstruction {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  border: none;
+  color: #4386bf;
+  background-color: white;
+  cursor: pointer;
 }
