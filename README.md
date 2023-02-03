@@ -63,7 +63,7 @@
 
 - [Live Demo Link](<!-- LIVE DEMO -->
 
-- [Live Demo Link](https://app.netlify.com/sites/leafy-donut-552111/deploys/63dd4f1b57992b0009b561b7)
+- [Live Demo Link]https://deploy-preview-6--leafy-donut-552111.netlify.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>)
 
