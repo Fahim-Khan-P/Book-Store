@@ -61,11 +61,7 @@
 
 > This Project is not dyployed yet.
 
-- [Live Demo Link](<!-- LIVE DEMO -->
-
 - [Live Demo Link]https://deploy-preview-6--leafy-donut-552111.netlify.app/
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
